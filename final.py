@@ -21,7 +21,7 @@ import pandas as pd
 from urllib.parse import urlencode
 import plotly.express as px
 import logging
-import fitz  # PyMuPDF
+#import fitz  # PyMuPDF
 import google.generativeai as genai
 from docxtpl import DocxTemplate
 import re
@@ -850,8 +850,8 @@ def main():
         else:
             indeed_interface()
 
-    elif st.session_state.current_page == 'resume_updater':
-        resume_updater_interface()
+   # elif st.session_state.current_page == 'resume_updater':
+      #  resume_updater_interface()
 
 if __name__ == "__main__":
     main()
